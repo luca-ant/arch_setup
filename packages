@@ -9,5 +9,6 @@ nemo
 redshift 
 udiskie 
 wget 
+tzdata
 
 powerline powerline-fonts noto-fonts 
