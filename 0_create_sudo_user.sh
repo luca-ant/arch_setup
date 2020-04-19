@@ -9,8 +9,7 @@ if [ $EUID != 0 ] ; then
 fi
 
 U=luca
-
-useradd -m -s /bin/bash $U
+useradd -m -G sudo -s /bin/bash $U
 
 echo "[-] Create password for user $U"
 
@@ -18,3 +17,12 @@ passwd $U
 
 echo "[+] Create password for user $U. Done!"
 
+pacman -S vi sudo
+
+groupadd sudo
+
+echo "[-] Uncomment sudo group privilege"
+
+visudo
+
+echo "[+] Uncomment sudo group privilege. Done!"
