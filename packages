@@ -1,14 +1,16 @@
 bash-completion 
 sudo 
 base-devel
-network-manager 
-nm-connetction-editor 
-network-manager-applet
+networkmanager 
+#network-manager-applet
 termite 
 nemo 
 redshift 
 udiskie 
 wget 
-tzdata
+tmux
 
+
+
+tzdata
 powerline powerline-fonts noto-fonts 
