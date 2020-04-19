@@ -1,12 +1,11 @@
 #!/bin/bash
-RP=$(realpath $0)
-CURRENT_DIR=$(dirname $RP)
 
-source $CURRENT_DIR/check_user.sh
+source $WD/check_user.sh
 
-cd $HOME
+T=$(mktemp)
+cd $T
+
 rm -rf yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-rm -rf yay

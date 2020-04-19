@@ -1,10 +1,8 @@
 #!/bin/bash
 
-RP=$(realpath $0)
-CURRENT_DIR=$(dirname $RP)
+WD=$(dirname $(realpath $0))
 
-source $CURRENT_DIR/check_user.sh
-
+source $WD/check_user.sh
 
 sudo pacman -S zsh wget
 

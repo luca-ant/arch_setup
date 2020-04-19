@@ -1,7 +1,13 @@
-bash-completion sudo base-devel
-network-manager nm-connetction-editor network-manager-applet
-i3 xorg-xinit xorg-server dmenu xterm scrot rofi xautolock nitrogen xorg-xinput
-
-termite nemo redshift udiskie redshift wget 
+bash-completion 
+sudo 
+base-devel
+network-manager 
+nm-connetction-editor 
+network-manager-applet
+termite 
+nemo 
+redshift 
+udiskie 
+wget 
 
 powerline powerline-fonts noto-fonts 
