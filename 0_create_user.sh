@@ -14,4 +14,7 @@ groupadd sudo
 
 useradd -m -G sudo -s /bin/bash $U
 
+echo "Uncomment sudo group privileges"
 
+pacman -S vi
+visudo
