@@ -14,7 +14,15 @@ groupadd sudo
 
 useradd -m -G sudo -s /bin/bash $U
 
-echo "Uncomment sudo group privileges"
+echo "[-] Create password for user $U"
+
+passwd $U
+
+echo "[+] Create password for user $U. Done!"
+
+echo "[-] Uncomment sudo group privilege"
 
 pacman -S vi
 visudo
+
+echo "[+] Uncomment sudo group privilege. Done!"
