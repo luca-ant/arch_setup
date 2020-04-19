@@ -11,18 +11,18 @@ fi
 U=luca
 useradd -m -G sudo -s /bin/bash $U
 
-echo "[-] Create password for user $U"
+echo "[-] Creating password for user $U..."
 
 passwd $U
 
-echo "[+] Create password for user $U. Done!"
+echo "[+] Creating password for user $U... Done!"
 
 pacman -S vi sudo
 
 groupadd sudo
 
-echo "[-] Uncomment sudo group privilege"
+echo "[-] Uncomment sudo group privilege..."
 
 visudo
 
-echo "[+] Uncomment sudo group privilege. Done!"
+echo "[+] Uncomment sudo group privilege... Done!"

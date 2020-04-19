@@ -12,9 +12,9 @@ U=luca
 
 useradd -m -s /bin/bash $U
 
-echo "[-] Create password for user $U"
+echo "[-] Creating password for user $U..."
 
 passwd $U
 
-echo "[+] Create password for user $U. Done!"
+echo "[+] Creating password for user $U... Done!"
 
