@@ -3,15 +3,9 @@ sudo
 base-devel
 networkmanager 
 #network-manager-applet
-termite 
 nemo 
-redshift 
 udiskie 
 wget 
-tmux
-
-
-
 tzdata
 vi
 powerline powerline-fonts noto-fonts 
