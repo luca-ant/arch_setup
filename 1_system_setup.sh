@@ -8,13 +8,10 @@ if [ $EUID != 0 ] ; then
         exit 1
 fi
 
-U=luca
 
-useradd -m -s /bin/bash $U
+echo "[-] Generating locale..."
 
-echo "[-] Creating password for user $U..."
+locale-gen
 
-passwd $U
-
-echo "[+] Creating password for user $U... Done!"
+echo "[+] Generating locale... Done!"
 

@@ -8,11 +8,11 @@ if [ $EUID != 0 ] ; then
         exit 1
 fi
 
-ESP_PATH="/boot"
 echo "[-] Installing systemd-boot..."
 
+ESP_PATH="/boot"
 
-cp -r $WD/loader $ESP_PATH
+cp -r $WD/systemd-boot/loader $ESP_PATH
 bootctl --path=$ESP_PATH install
 
 echo

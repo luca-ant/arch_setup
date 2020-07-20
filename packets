@@ -1,1 +1,7 @@
-fakeroot
+bash-completion 
+sudo 
+base-devel
+networkmanager 
+wget 
+tzdata
+vi

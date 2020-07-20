@@ -8,10 +8,13 @@ if [ $EUID != 0 ] ; then
         exit 1
 fi
 
+WD=$(dirname "$WD")
 
-echo "[-] Generating locale..."
+echo "[-] Installing packets..."
 
-local-gen
+cat "$WD/packets" | while read P ; do
+    pacman --noconfirm -S $P
+done
 
-echo "[+] Generating locale... Done!"
 
+echo "[+] Installing packets... Done!"
