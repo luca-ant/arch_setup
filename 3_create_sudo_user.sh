@@ -8,6 +8,8 @@ if [ $EUID != 0 ] ; then
         exit 1
 fi
 
+pacman -S vi sudo
+
 U=luca
 useradd -m -G sudo -s /bin/bash $U
 
@@ -16,8 +18,6 @@ echo "[-] Creating password for user $U..."
 passwd $U
 
 echo "[+] Creating password for user $U... Done!"
-
-pacman -S vi sudo
 
 groupadd sudo
 
