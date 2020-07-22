@@ -10,11 +10,13 @@ fi
 
 WD=$(dirname "$WD")
 
-echo "[-] Installing packets..."
+echo -e "[-] Installing packets..."
 
 cat "$WD/packets" | while read P ; do
     pacman --noconfirm -S $P
 done
 
 
-echo "[+] Installing packets... Done!"
+echo -e "[+] Installing packets... Done!\n"
+
+echo -e "FINISH! Bye!"
