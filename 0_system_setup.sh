@@ -37,7 +37,8 @@ echo -e "[-] Setting LANG variable..."
 
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
-echo "LANG=it_IT.UTF-8" | tee /etc/locale.conf
+#echo "LANG=it_IT.UTF-8" | tee /etc/locale.conf
+echo "LANG=en_US.UTF-8" | tee /etc/locale.conf
 
 echo -e "[+] Setting LANG variable... Done!\n"
 
