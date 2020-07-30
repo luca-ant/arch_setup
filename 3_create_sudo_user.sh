@@ -17,8 +17,7 @@ echo
 echo -e "[-] Creating user $U..."
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
-useradd -m -G sudo -s /bin/bash $U
-groupadd sudo
+useradd -m -s /bin/bash $U
 
 echo -e "[+] Creating user $U... Done!\n"
 
@@ -36,5 +35,11 @@ echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ;
 visudo
 
 echo -e "[+] Uncomment sudo group privilege... Done!\n"
+
+
+echo -e "[-] Adding $U to sudo group..."
+groupadd sudo
+usermod -G sudo -a $U
+echo -e "[-] Adding $U to sudo group...Done!\n"
 
 echo -e "FINISH! Bye!"
