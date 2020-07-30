@@ -17,7 +17,7 @@ echo
 echo -e "[-] Creating user $U..."
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
-useradd -m -s /bin/bash $U
+useradd -U -m -s /bin/bash $U
 
 echo -e "[+] Creating user $U... Done!\n"
 
