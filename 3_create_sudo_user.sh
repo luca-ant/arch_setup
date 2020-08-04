@@ -38,7 +38,7 @@ echo -e "[+] Uncomment sudo group privilege... Done!\n"
 
 
 echo -e "[-] Adding $U to sudo group..."
-groupadd sudo
+groupadd -r sudo
 usermod -aG sudo $U
 echo -e "[-] Adding $U to sudo group...Done!\n"
 
