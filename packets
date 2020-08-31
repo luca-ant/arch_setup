@@ -4,5 +4,5 @@ sudo
 man
 vim
 wget
-networkmanager
 tzdata
+networkmanager
