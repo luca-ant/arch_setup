@@ -43,3 +43,4 @@ usermod -aG sudo $U
 echo -e "[-] Adding $U to sudo group...Done!\n"
 
 echo -e "FINISH! Bye!"
+

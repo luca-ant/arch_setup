@@ -20,3 +20,4 @@ done
 echo -e "[+] Installing packets... Done!\n"
 
 echo -e "FINISH! Bye!"
+

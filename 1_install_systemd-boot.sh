@@ -36,3 +36,4 @@ echo -e "[+] Changing PARTUUID... Done!\n"
 echo -e "${BOLD}REMEMBER TO CHANGE PARTUUID!${NORMAL}\n"
 
 echo -e "FINISH! Bye!"
+
