@@ -4,5 +4,6 @@ sudo
 man
 vim
 wget
+cronie
 tzdata
 networkmanager
