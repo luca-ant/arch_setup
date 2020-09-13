@@ -11,12 +11,15 @@ fi
 echo -e "[-] Setup network..."
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
-pacman -S networkmanager dhcpcd
+pacman -S networkmanager
+systemctl start NetworkManager.service
+systemctl enable NetworkManager.service
 
-ip link set eth0 up
+#ip link set eth0 up
 
-systemctl start dhcpcd.service
-systemctl enable dhcpcd.service
+#pacman -S dhcpcd
+#systemctl start dhcpcd.service
+#systemctl enable dhcpcd.service
 
 echo -e "[+] Setup network... Done!\n"
 
