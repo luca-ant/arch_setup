@@ -12,6 +12,8 @@ echo -e "\n[-] Setting Time Zone..."
 
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
+timedatectl set-ntp true
+
 ln -sf /usr/share/zoneinfo/Europe/Rome /etc/localtime
 hwclock --systohc
 

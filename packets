@@ -1,7 +1,9 @@
 bash-completion
 base-devel
 sudo
-man
+man-db
+man-pages
+texinfo
 vim
 wget
 cronie
