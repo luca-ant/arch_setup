@@ -9,3 +9,6 @@ wget
 cronie
 tzdata
 networkmanager
+which
+git
+
