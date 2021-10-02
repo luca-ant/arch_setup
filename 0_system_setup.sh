@@ -8,6 +8,8 @@ if [ $EUID != 0 ] ; then
         exit 1
 fi
 
+HOSTNAME="swift"
+
 echo -e "\n[-] Setting Time Zone..."
 
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
@@ -56,10 +58,10 @@ echo -e "[-] Setting HOSTNAME..."
 
 echo Continue? [y/N] ; read A ; if [ -z $A ] || [ $A != 'y' ] ; then echo Bye! ; exit 0 ; fi
 
-echo "swift" | tee /etc/hostname
+echo "$HOSTNAME" | tee /etc/hostname
 echo -e "127.0.0.1\tlocalhost" | tee -a /etc/hosts
 echo -e "::1\t\tlocalhost" | tee -a /etc/hosts
-echo -e "127.0.0.1\tswift" | tee -a /etc/hosts
+echo -e "127.0.0.1\t$HOSTNAME" | tee -a /etc/hosts
 
 echo -e "[+] Setting HOSTNAME... Done!\n"
 
